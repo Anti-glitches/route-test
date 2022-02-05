@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
+const PORT = process.env.PORT || 5000;
+
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -34,7 +36,7 @@ app.get('*', (req, res)=>{
 });
 
 
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
     console.log('Listening on port 3000');
 });
 

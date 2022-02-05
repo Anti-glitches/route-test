@@ -1,0 +1,191 @@
+html{
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 10vh 0;
+}
+
+
+.re-span{
+    font-weight: 100;
+    font-style: italic;
+}
+
+.re-h1{
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+.re-h2{
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+.re-btn{
+    width: 50%;
+    background-color: lightblue;
+}
+
+#service-section{
+    background-color: aliceblue;
+    height: 25vh;
+    width: 80vw;
+    position: absolute;
+    left: 34%;
+    top: 205%;
+    z-index: -2;
+}
+
+#testo-section{
+    background-color: aliceblue;
+    height: 80vh;
+    width: 80vw;
+    position: absolute;
+    left: -31%;
+    border-radius: 0 0 80px 0;
+    z-index: -2;
+}
+
+#section-test{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#floating-quote{
+    position: absolute;
+    font-size: 6rem;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    width: 0;
+    left: -10%;
+    top: -20%;
+}
+
+.box-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.profile{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+/* .active{
+    border: 2px solid black;
+    height: 120px;
+    width: 120px;
+} */
+
+/* tutorial testimonial below */
+
+.testimonial-section{
+    background-color: aliceblue;
+    padding: 80px 0;
+    min-height: 100vh;
+}
+
+
+.testi-img .img-box{
+    max-width: 360px;
+    margin:auto;
+    text-align: center;
+    position: relative;
+}
+
+.testi-img .circle{
+    height: 360px;
+    width: 360px;
+    background-color: aquamarine;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+    transition: all 0.5s ease-in;
+}
+
+.testi-img .img-box-inner{
+    position: relative;
+    border-radius: 0 0 180px 180px;
+    overflow: hidden;
+}
+
+.testi-img .img-box-inner img{
+    max-width: 310px;
+    /* height: 433px; */
+}
+
+.testimonial-section .carousel-inner{
+    margin-bottom: 20px;
+}
+
+.testimonial-section .carousel-control-next{
+    margin-left: 8px;
+}
+
+.testimonial-section .carousel-control-prev,
+.testimonial-section .carousel-control-next{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background-color: aquamarine;
+    display: inline-flex;
+    border-radius: 50%;
+}
+
+.testimonial-section .carousel-control-prev img,
+.testimonial-section .carousel-control-next img{
+    width: 15px;
+}
+
+.testi-item h3, .testi-item p{
+    font-size: 18px;
+}
+
+.testi-item h3{
+    text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+    .testi-img .img-box{
+        max-width: 300px;
+    }
+    .testi-img .circle{
+        width: 300px;
+        height: 300px;
+    }
+    .testi-img .img-box-inner{
+        border-radius: 0 0 150px 150px;
+    }
+
+    .testi-img .img-box-inner img{
+        max-width: 230px;
+    }
+}
+
+@media (max-width: 767px) {
+    .testi-img{
+        margin-bottom: 40px;
+    }
+    .testimonial-section{
+        padding: 0 5vw;
+    }
+}
